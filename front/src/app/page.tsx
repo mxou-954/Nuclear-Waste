@@ -14,7 +14,7 @@ export default function NuclearWasteWebsite() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navigateTo = (page) => {
+  const navigateTo = (page : any) => {
     setCurrentPage(page);
     setIsMenuOpen(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -100,7 +100,7 @@ export default function NuclearWasteWebsite() {
   );
 }
 
-function NavButton({ children, onClick, active }) {
+function NavButton({ children, onClick, active } : any) {
   return (
     <button
       onClick={onClick}
@@ -115,7 +115,7 @@ function NavButton({ children, onClick, active }) {
   );
 }
 
-function MobileNavButton({ children, onClick }) {
+function MobileNavButton({ children, onClick } : any) {
   return (
     <button
       onClick={onClick}
@@ -126,13 +126,13 @@ function MobileNavButton({ children, onClick }) {
   );
 }
 
-function AccueilPage({ scrollY }) {
-  const [isVisible, setIsVisible] = useState({});
+function AccueilPage({ scrollY } : any) {
+  const [isVisible, setIsVisible] = useState<any>({});
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
+        entries.forEach((entry : any) => {
           if (entry.isIntersecting) {
             setIsVisible(prev => ({ ...prev, [entry.target.id]: true }));
           }
@@ -432,7 +432,7 @@ function AccueilPage({ scrollY }) {
   );
 }
 
-function StatCard({ number, label, description, highlight }) {
+function StatCard({ number, label, description, highlight } : any) {
   return (
     <div className={`p-8 rounded-2xl ${highlight ? 'bg-emerald-600 text-white' : 'bg-white border-2 border-gray-100'}`}>
       <p className={`text-4xl font-bold mb-2 ${highlight ? 'text-white' : 'text-gray-900'}`}>{number}</p>
@@ -442,7 +442,7 @@ function StatCard({ number, label, description, highlight }) {
   );
 }
 
-function CTACard({ icon, title, description, link }) {
+function CTACard({ icon, title, description, link } : any) {
   return (
     <a 
       href={link}

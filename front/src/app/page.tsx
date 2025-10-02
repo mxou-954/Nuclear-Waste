@@ -688,7 +688,7 @@ function MapMondePage() {
             Map Monde du Nucléaire
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Visualisez la répartition mondiale des installations nucléaires et
+            Visualisez la répartition mondiale & Française des installations nucléaires et
             des sites de stockage
           </p>
         </div>
@@ -704,11 +704,11 @@ function MapMondePage() {
             </div>
             <div className="p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                Carte mondiale - Vue principale
+                Carte de la France - Vue principale
               </h3>
               <p className="text-gray-600">
                 Répartition des centrales nucléaires et sites de stockage dans
-                le monde
+                en France
               </p>
             </div>
           </div>
@@ -763,7 +763,8 @@ function ControversesPage() {
           </p>
           <div className="text-center">
             <a
-              href="#"
+              href="https://prezi.com/view/qJZn1qALTaG4aNEV9L5w/?referral_token=KZwLNPlnB3FN"
+              target="_blank"
               className="inline-flex items-center gap-3 px-8 py-4 bg-emerald-600 text-white rounded-full hover:bg-emerald-500 transition-all duration-300 hover:gap-5 font-medium text-lg shadow-lg hover:shadow-xl"
             >
               Accéder à la cartographie Prezi
